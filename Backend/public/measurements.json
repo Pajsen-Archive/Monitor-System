@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Back-End Chart",
+    "location": "board0",
+    "url": "http://localhost:3001/",
+    "chartType": "spark",
+    "data": []
+  },
+  {
+    "name": "Front-End Chart",
+    "location": "board1",
+    "url": "http://localhost:3001/cck",
+    "chartType": "spark",
+    "max": 700,
+    "threshold": 400,
+    "data": []
+  },
+  {
+    "name": "Back-End Time",
+    "location": "board2",
+    "url": "localhost:3001/",
+    "chartType": "gauge"
+  },
+  {
+    "name": "Front-End Time",
+    "location": "board3",
+    "url": "localhost:3001",
+    "chartType": "gauge"
+  },
+  {
+    "name": "CPU Usage",
+    "location": "board4",
+    "url": "http://localhost:3001/api/measurements/cpu.js",
+    "chartType": "gauge",
+    "value": "os1",
+    "max": 100,
+    "unit": "%"
+  },
+  {
+    "name": "Memory Usage",
+    "location": "board5",
+    "url": "http://localhost:3001/api/measurements/mem.js",
+    "chartType": "gauge",
+    "value": "osUsed",
+    "unit": "%",
+    "max": 120
+  },
+  {
+    "name": "Node Heap",
+    "location": "board6",
+    "url": "http://localhost:3001/api/measurements/mem.js",
+    "chartType": "gauge",
+    "value": "used",
+    "unit": "%",
+    "max": 120
+  }
+]
