@@ -21,15 +21,6 @@ function getFile(request, response) {
     response.setHeader('Content-type', 'text/json').send(JSON.stringify(apiCall)).end()
 }
 
-app.get("/cck", async (request, response) => {
-    await sleep(401)
-    response.setHeader('Content-type', 'text/json').send("{'Gods': 'Charles, Chaspian, Karl', 'version': 1.4.1'}")
-})
-
-app.get("/version", (request, response) => {
-    response.setHeader('Content-type', 'text/json').send("{'Gods': 'Charles, Chaspian, Karl', 'version': 1.4.1'}")
-})
-
 server.listen(3001, function() {
     console.log("Started server")
 });
